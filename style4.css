@@ -1,0 +1,152 @@
+body{
+    background-color: #edebeb;
+    display: grid;
+    place-items: center;
+
+  }
+  
+  
+  header{
+    width: 100%;
+    background-color: white;
+  }
+
+
+  .cabeza{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  
+  .img_call{
+    width: 40px;
+    align-items: center;
+  } 
+  
+  .call_center{
+    font-size: 19px;
+    text-align: justify;
+  }
+  
+  .call{
+    width: 200px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #21c824;
+    border: 10px;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+   h1{
+    color: #008EE5;
+  }
+  
+  .img_logos{
+    width: 150px;
+  }
+
+  .alert{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 80%;
+    background-color: rgb(96, 93, 96);
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .alert_info {
+    /* display: block; */
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    
+  }
+  
+  .img_alert{
+    width: 200px;
+    height: 150px;
+  }
+
+  .container{
+    margin-top: 50px; 
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+  }
+  
+  .info {
+    background: #008EE5;
+    border-radius:0px 15px 15px 0px;
+    width: 425px;
+    margin-top: 50px;
+  }
+  
+  .info h3{
+    font-size: 20px;
+    color: white;
+    margin: 50px;
+  }
+
+    /* -------------------- */
+    
+    .wrapper{
+        text-align: center;
+    }
+
+    .verificado{
+      width: 90px;
+    }
+
+    .info_actualizacion{
+      color: black;
+      font-size: 35px;
+    }
+
+
+
+
+
+
+    /* ------------ */
+
+  .desc{
+    color: rgb(96, 93, 96);
+  }
+  
+  .info_llamadas{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+  }
+  
+  .llamadas{
+    display: grid;
+    grid-template-columns: 30% 70%; 
+    align-items: center;
+    background-color: white;
+    border-radius:15px;
+    margin-right: 30px;
+    width: 150PX;
+  }
+  
+  .phone{
+     width: 25px;
+     align-items: center;
+  }
+  
+  footer{
+    margin-top: 50px;
+    background-color: #008EE5;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  span{
+    color: white;
+  }  

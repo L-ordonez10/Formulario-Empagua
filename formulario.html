@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empagua</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="cabeza">
+
+            <div class="item_cabeza">
+            
+                <div class="call">
+                    <img class="img_call" src="/assets/Icon-Call Center-01.png" alt="">
+                    <span class="call_center">Call Center: 1551</span>
+                </div>                
+
+            </div>
+
+            <div class="item_cabeza">
+                <h1>Actualización de datos</h1>
+            </div>
+
+            <div class="item_cabeza">
+                <img class="img_logos" src="/assets/Logos-01.png" alt="">
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="alert">
+        <img class="img_alert" src="assets/Box Important.png">
+        <span class="alert_info ">
+              Estimado Vecino, la actualizacion de datos a realizar en este formulario, es para modificar únicamente <br>
+              los datos del cobro mensual y de su factura, esta actualizacion de datos No modificara el nombre del   <br>
+              titular de la cuenta. A su vez, se le requieren datos como número de teléfono para estar en contacto   <br>
+               con usted y correo electronico FEL en el momento que cancele su servcio.
+        </span>
+    </div>
+
+
+    <form class="formulario" id="formulario">
+
+        <div class="info" >
+            <h3><b> EMPAGUA</b><br>
+                Trabajamos para servirle mejor
+            </h3>
+        </div>
+    
+
+        <div class="wrapper">
+            <div class="item">
+                <label for="Medidor">Medidor:</label>
+                <input type="text" id="medidor" placeholder="Número de medidor" required>
+            </div>
+       
+            <div class="item">
+                <label for="serie">Serie factura:</label>
+                 <input type="text" id="serie" placeholder="Número de serie" required>
+            </div>
+        
+        <div class="item">
+            <label for="factura">Número factura:</label>
+            <input type="text" id="factura" placeholder="Número de factura" required>
+        </div>
+
+        <div class="item">
+            <button class="btnverificar">
+                Verificar
+            </button>
+        </div>
+       
+        
+    </div>
+
+        <div class="wrapper2">
+        
+            <div class="item2">
+                <label for="propietario">Propietario:</label>
+                <h4>Si</h4>
+                <input class="op" type="checkbox" id="si" name="opciones" value="si">
+                <h4>No</h4>
+                <input class="op" type="checkbox" id="no" name="opciones" value="no">
+            </div>
+        
+            <div class="item2">
+                <label for="Nombre">Nombre a facturar:</label>
+                <input class="nom_fact" type="text" id="nombre" placeholder="Nombre a facturar" required>
+            </div>
+
+    </div>
+
+    <div class="wrapper3">
+
+        <div class="item3">
+            <label for="nit">Nit a facturar:</label>
+            <input type="text" id="nit" placeholder="Nit a facturar" required><br><br>
+        </div>
+        
+        <div div class="item3">
+
+        <label for="dpi">DPI:</label>
+        <input type="text" id="dpi" placeholder="Número de DPI" required><br><br>      
+        </div>
+        <div class="item3">
+          
+            <button type="submit" class="btnadjuntar">
+            <img class="subir" src="/assets/Icono_Nube-03.png" alt="">
+                Adjuntar copia de DPI
+            </button>
+        </div>
+
+    </div>
+
+    <div class="wrapper4">
+
+        <div class="item4">
+            <button class="btnnext" onclick="redirectToFormulario()">Siguiente</button>
+        </div>
+
+    </div>
+    
+    </form>
+
+        <h3 class="desc">PARA MAYOR INFORMACIÓN SOBRE ESTE PROCESO DE ACTUALIZACIÓN DE DATOS, LLAMAR A:</h3>
+
+        <div class="info_llamadas">
+            <div class="llamadas">
+                <img class="phone" src="/assets/Telefono-01.png" alt="">
+                2285-8726    
+            </div>
+
+            <div class="llamadas">
+                <img class="phone" src="/assets/Telefono-01.png" alt="">
+                2390-3635 
+            </div>
+        </div>
+
+        <footer>
+            <span>Copryght © 2023-Empagua - Todos los derechos reservados.</span>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    function redirectToFormulario() {
+        window.location.href = "formulario2.html";
+    }
+</script>

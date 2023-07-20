@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empagua</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    
+</head>
+<body>
+    <header>
+        <div class="cabeza">
+
+            <div class="item_cabeza">
+            
+                <div class="call">
+                    <img class="img_call" src="/assets/Icon-Call Center-01.png" alt="">
+                    <span class="call_center">Call Center: 1551</span>
+                </div>                
+
+            </div>
+
+            <div class="item_cabeza">
+                <h1>Actualización de datos</h1>
+            </div>
+
+            <div class="item_cabeza">
+                <img class="img_logos" src="/assets/Logos-01.png" alt="">
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="alert">
+        <img class="img_alert" src="assets/Box Important.png">
+        <span class="alert_info ">
+              Estimado Vecino, la actualización de datos a realizar en este formulario, es para modificar únicamente <br>
+              los datos del cobro mensual y de su factura, esta actualización de datos No modificará el nombre del   <br>
+              titular de la cuenta. A su vez, se le requieren datos como número de teléfono para estar en contacto   <br>
+              con usted y correo electrónico para poder enciarle su factura electrónica FEL en el momento que        <br> 
+              cancele su servcio.
+        </span>
+    </div>
+
+
+    <form class="formulario" id="formulario">
+
+        <div class="info" >
+            <h3><b> EMPAGUA</b><br>
+                Trabajamos para servirle mejor
+            </h3>
+        </div>
+        
+        <div class="wrapper">
+        <div class="item">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" placeholder="Dirección domiciliar" required><br><br>
+        </div>
+
+        </div>
+       
+        
+    </div>
+
+        <div class="wrapper2">
+        
+            <div class="item2">
+                <label for="Correo">Correo electrónico:</label>
+                <input type="text" id="correo" placeholder="Correo princial" required>
+            </div>
+
+    </div>
+
+    <div class="wrapper3">
+
+        <div class="item3">
+            <label for="correoal">Correo electrónico alternativo:</label>
+            <input type="text" id="correoal" placeholder="correo alternativo" required><br><br>
+        </div>
+    
+
+    </div>
+
+    <div class="wrapper4">
+
+        <div class="item4">
+            <button class="btnnext" onclick="redirectToFormulario()">Siguiente</button>
+        </div>
+
+    </div>
+    
+    </form>
+
+        <h3 class="desc">PARA MAYOR INFORMACIÓN SOBRE ESTE PROCESO DE ACTUALIZACIÓN DE DATOS, LLAMAR A:</h3>
+
+        <div class="info_llamadas">
+            <div class="llamadas">
+                <img class="phone" src="/assets/Telefono-01.png" alt="">
+                2285-8726    
+            </div>
+
+            <div class="llamadas">
+                <img class="phone" src="/assets/Telefono-01.png" alt="">
+                2390-3635 
+            </div>
+        </div>
+
+        <footer>
+            <span>Copryght © 2023-Empagua - Todos los derechos reservados.</span>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    function redirectToFormulario() {
+        window.location.href = "formulario3.html";
+    }
+</script>
