@@ -35,11 +35,12 @@
     <div class="alert">
         <img class="img_alert" src="assets/Box Important.png">
         <span class="alert_info ">
-              Estimado Vecino, la actualizacion de datos a realizar en este formulario, es para modificar únicamente <br>
-              los datos del cobro mensual y de su factura, esta actualizacion de datos No modificara el nombre del   <br>
-              titular de la cuenta. A su vez, se le requieren datos como número de teléfono para estar en contacto   <br>
-               con usted y correo electronico FEL en el momento que cancele su servcio.
-        </span>
+            Estimado Vecino, la actualización de datos a realizar en este formulario, es para modificar únicamente <br>
+            los datos del cobro mensual y de su factura, esta actualización de datos No modificará el nombre del   <br>
+            titular de la cuenta. A su vez, se le requieren datos como número de teléfono para estar en contacto   <br>
+            con usted y correo electrónico para poder enciarle su factura electrónica FEL en el momento que        <br> 
+            cancele su servcio.
+      </span>
     </div>
 
 
@@ -108,10 +109,10 @@
         </div>
         <div class="item3">
           
-            <button type="submit" class="btnadjuntar">
+            <div class="btnadjuntar" id="subirpdf">
             <img class="subir" src="/assets/Icono_Nube-03.png" alt="">
-                Adjuntar copia de DPI
-            </button>
+                <span class="adjuntar">Adjuntar copia de DPI</span>
+            </div>
         </div>
 
     </div>
@@ -147,8 +148,33 @@
 </body>
 </html>
 
+
+
+
+
 <script>
     function redirectToFormulario() {
         window.location.href = "formulario2.html";
     }
+
+    document.getElementById("subirpdf").addEventListener("click", function() {
+        // Simula el clic en el elemento de entrada de tipo "file"
+        const inputFile = document.createElement("input");
+        inputFile.type = "file";
+        inputFile.accept = "application/pdf"; // Permite solo archivos PDF
+        inputFile.style.display = "none";
+        inputFile.addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+
+                
+                console.log("Nombre del archivo: ", file.name);
+                console.log("Tipo de archivo: ", file.type);
+                console.log("Tamaño del archivo: ", file.size, " bytes");
+            }
+        });
+        document.body.appendChild(inputFile);
+        inputFile.click();
+        document.body.removeChild(inputFile);
+    });
 </script>
