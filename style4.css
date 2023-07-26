@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Gotham Book";
+  src: url(assets/1826-font.otf) format("woff"),
+       url(assets/1826-font.otf) format("truetype");
+ 
+}
+
+
 body{
   background-color: #edebeb;
   display: grid;
@@ -25,6 +33,7 @@ header{
   width: 40px;
   align-items: center;
 } 
+
 /* CELULAR */
 @media (max-width: 430px) {
   .img_call {
@@ -36,17 +45,19 @@ header{
   
 
 .call_center{
-  font-size: 19px;
+  font-size: 17px;
   text-align: justify;
+  font-family: "Gotham Book";
 }
 
 @media (max-width: 430px) {
   .call_center {
     
-    font-size: 8px;
+    font-size: 7px;
 
    }
   }
+
 
 .call{
   width: 200px;
@@ -68,12 +79,13 @@ header{
 
  h1{
   color: #008EE5;
+  font-family: "Gotham Book";
 }
 
 @media (max-width: 430px) {
   h1 {
     
-    font-size: 15px;
+    font-size: 12px;
 
    }
   }
@@ -122,28 +134,34 @@ header{
    }
   }
 
-
-
 .alert_info {
   /* display: block; */
   color: white;
   font-size: 22px;
   text-align: justify;
-  
+  font-family: "Gotham Book";
 }
-
-@media (max-width: 960px) {
+@media (max-width: 1450px) {
   .alert_info {
     font-size: 16px;
     text-align: justify;
+    height: 55px;
+   }
+  } 
 
+
+@media (max-width: 960px) {
+  .alert_info {
+    font-size: 13px;
+    text-align: justify;
+    height: 55px;
    }
   } 
 
 
 @media (max-width: 430px) {
  .alert_info {
-   font-size: 8.5px;
+   font-size: 6.8px;
    text-align: justify;
    height: 55px;
   }
@@ -170,6 +188,7 @@ header{
    }
  }
 
+
   .container{
     margin-top: 50px; 
     width: 80%;
@@ -184,6 +203,7 @@ header{
     border-radius:0px 15px 15px 0px;
     width: 425px;
     margin-top: 50px;
+    height: 60px;
   }
   
   
@@ -200,16 +220,18 @@ header{
     font-size: 20px;
     color: white;
     margin: 20px;
+    font-family: "Gotham Book";
   }
   
   
   @media (max-width: 430px) {
     .info h3 {
       
-      font-size: 15px;
+      font-size: 12.5px;
   
      }
     }
+  
   
       /* -------------------- */
     
@@ -232,6 +254,100 @@ header{
     .info_actualizacion{
       color: black;
       font-size: 35px;
+      .desc{
+        color: rgb(96, 93, 96);
+        font-family: "Gotham Book";
+      }
+      
+      
+      @media (max-width: 430px) {
+        .desc {
+          text-align: center;
+          font-size: 20px;
+      
+         }
+        }
+      
+      .info_llamadas{
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        margin-top: 20px;
+      }
+      
+      
+      @media (max-width: 430px) {
+        .info_llamadas {
+          display: grid;
+          grid-template-columns: 1fr;
+      
+         }
+        }
+      
+      .llamadas{
+        display: grid;
+        grid-template-columns: 30% 70%; 
+        align-items: center;
+        background-color: white;
+        border-radius:15px;
+        margin-right: 30px;
+        width: 150PX;
+        margin-top: 10px;
+      }
+      
+      @media (max-width: 960px) {
+        .llamadas {
+          
+          width: 320px;
+      
+         }
+        }
+      
+      @media (max-width: 430px) {
+        .llamadas {
+          
+          width: 280px;
+      
+         }
+        }
+      
+      .phone{
+         width: 40px;
+         align-items: center;
+      }
+      
+      h2{
+        font-size: 15px;
+        font-family: "Gotham Book";
+      }
+      @media (max-width: 960px) {
+        .phone {
+          
+          width: 75px;
+      
+         }
+        }
+      
+        @media (max-width: 430px) {
+          .phone {
+            
+            width: 50px;
+        
+           }
+          }
+      
+      
+      footer{
+        margin-top: 50px;
+        background-color: #008EE5;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+      }
+      
+      span{
+        color: white;
+        font-family: "Gotham Book";
+      }
     }
 
     @media (max-width: 430px) {
@@ -249,6 +365,7 @@ header{
 
     .desc{
       color: rgb(96, 93, 96);
+      font-family: "Gotham Book";
     }
     
     
@@ -306,7 +423,7 @@ header{
        width: 40px;
        align-items: center;
     }
-    
+
     
     @media (max-width: 960px) {
       .phone {
@@ -323,7 +440,33 @@ header{
       
          }
         }
+
     
+    h2{
+      font-size: 15px;
+      font-family: "Gotham Book";
+    }
+
+    h2{
+      font-size: 15px;
+      font-family: "Gotham Book";
+    }
+    
+    @media (max-width: 960px) {
+      h2 {
+        
+        font-size: 22px;
+    
+       }
+      }
+    
+      @media (max-width: 430px) {
+        h2 {
+          
+          font-size: 20px;
+      
+         }
+        }    
     
     footer{
       margin-top: 50px;
@@ -335,4 +478,5 @@ header{
     
     span{
       color: white;
+      font-family: "Gotham Book";
     }
